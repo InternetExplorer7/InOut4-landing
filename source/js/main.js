@@ -19,7 +19,7 @@ function setaboutHeight(e) {
 window.addEventListener('resize', setaboutHeight, true)
 
 $(document).ready(function () {
-  var url = 'https://www.youtube.com/embed/SzmioR4Dj8E'
+  var url = 'https://www.youtube.com/embed/6FzUSYCakJc'
   $('#play-video').on('click', function (ev) {
     $('#video')[0].src = url + '?autoplay=1'
     ev.preventDefault()
@@ -73,3 +73,7 @@ function register($form) {
     }
   })
 };
+
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
